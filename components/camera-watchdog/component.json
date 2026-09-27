@@ -1,0 +1,22 @@
+{
+  "name": "カメラ死活監視",
+  "description": "RTSP カメラを定期的に覗き、映らない・暗い・白飛び・固まったを判定してログに 1 行 1 件の JSON で出す",
+  "version": "1.0.0",
+  "config": {
+    "env": {
+      "CAMERAS": "",
+      "INTERVAL_SEC": "60"
+    },
+    "ports": [
+      {
+        "host": 18080,
+        "container": 8080
+      }
+    ],
+    "resources": {
+      "memory": "256m",
+      "cpus": "0.25"
+    },
+    "runArgs": ["--read-only"]
+  }
+}

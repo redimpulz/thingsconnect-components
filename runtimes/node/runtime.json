@@ -1,0 +1,7 @@
+{
+  "name": "Node.js 22",
+  "version": "1.0.0",
+  "language": "javascript",
+  "entry": "main.js",
+  "packages": []
+}

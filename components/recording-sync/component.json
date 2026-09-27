@@ -1,0 +1,20 @@
+{
+  "name": "録画の同期（S3・Azure・GCS）",
+  "description": "エッジPC の録画を rclone でお客様のストレージへ定期的にコピーする。送り先から録画を消すことはしない",
+  "version": "1.0.0",
+  "config": {
+    "env": {
+      "RCLONE_CONFIG_DEST_TYPE": "s3",
+      "RCLONE_CONFIG_DEST_PROVIDER": "AWS",
+      "RCLONE_CONFIG_DEST_REGION": "ap-northeast-1",
+      "RCLONE_CONFIG_DEST_ENDPOINT": "",
+      "RCLONE_CONFIG_DEST_ACCESS_KEY_ID": "",
+      "RCLONE_CONFIG_DEST_SECRET_ACCESS_KEY": "",
+      "DEST_PATH": "",
+      "INTERVAL_SEC": "300",
+      "BWLIMIT": ""
+    },
+    "mountRecordings": true,
+    "resources": { "memory": "256m", "cpus": "0.5" }
+  }
+}

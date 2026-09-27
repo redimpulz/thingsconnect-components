@@ -1,0 +1,15 @@
+{
+  "name": "Kinesis Video Streams 取り込み",
+  "description": "カメラの RTSP（H.264）を Amazon Kinesis Video Streams へ直接送る。取り込みと保存の料金はお客様の AWS アカウントに請求される",
+  "version": "1.0.0",
+  "config": {
+    "env": {
+      "RTSP_URL": "",
+      "STREAM_NAME": "",
+      "AWS_REGION": "ap-northeast-1",
+      "AWS_ACCESS_KEY_ID": "",
+      "AWS_SECRET_ACCESS_KEY": ""
+    },
+    "resources": { "memory": "512m", "cpus": "1" }
+  }
+}
