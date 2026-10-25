@@ -2,10 +2,10 @@
 
 [ThingsConnect](https://thingsconnect.app) のカスタム処理で使える公開コンポーネントと、スクリプトを動かすランタイムのソースです。どちらも ThingsConnect のコンポーネント一覧に最初から出ていて、エッジPC へそのままデプロイできます。
 
-| ディレクトリ | 中身 | イメージ |
-| --- | --- | --- |
-| `components/<名前>/` | 公開コンポーネント（Dockerfile・コード・`component.json`） | `public.ecr.aws/<alias>/components/<名前>:<version>` |
-| `runtimes/<名前>/` | 画面のエディタで書いたスクリプトを動かすランタイム（Dockerfile・`runtime.json`） | `public.ecr.aws/<alias>/runtimes/<名前>:<version>` |
+| ディレクトリ         | 中身                                                                             | イメージ                                             |
+| -------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| `components/<名前>/` | 公開コンポーネント（Dockerfile・コード・`component.json`）                       | `public.ecr.aws/<alias>/components/<名前>:<version>` |
+| `runtimes/<名前>/`   | 画面のエディタで書いたスクリプトを動かすランタイム（Dockerfile・`runtime.json`） | `public.ecr.aws/<alias>/runtimes/<名前>:<version>`   |
 
 `component.json` の `config` は、ThingsConnect にバージョンを登録するときの設定（環境変数の既定値・ポート・リソース上限）です。
 
